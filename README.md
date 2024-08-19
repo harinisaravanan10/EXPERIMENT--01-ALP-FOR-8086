@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/b37ec3ff-d997-4990-accf-7c26ad6845a3)# EXPERIMENT--01-ALP-FOR-8086
 Name :HARINI.S
 Roll no :212223040058
 Date of experiment :16.08.2024
