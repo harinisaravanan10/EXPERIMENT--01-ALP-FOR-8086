@@ -133,10 +133,63 @@ ret
 
 ![Screenshot 2024-08-19 141130](https://github.com/user-attachments/assets/2cb2c9a3-bb58-473c-ac2a-3f4c033dc48d)
 
+OR OPERATION
+
+```
+org 100h
+org 100H
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+ret
+```
+![Screenshot 2024-08-19 144326](https://github.com/user-attachments/assets/fc72dd0f-b878-43b0-a6d0-b48c7625dc63)
+
+AND OPERATION 
+
+```
+org 100H
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX;
+ret
+```
+
+![Screenshot 2024-08-19 144640](https://github.com/user-attachments/assets/50d41840-490f-4927-bbec-3ff94acc2319)
+
+XOR OPERATION 
+
+```
+org 100H
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+XOR AX,BX;
+ret
+```
+
+![image](https://github.com/user-attachments/assets/4ee7ff4e-8d6b-49c8-9aab-087c222baa7b)
+
+NOT OPERATION
+
+```
+org 100H
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX;
+MOV [SI+6],AX;
+ret
+```
+
+![Screenshot 2024-08-19 190209](https://github.com/user-attachments/assets/669a8737-8daf-4614-a5a3-ae0612c9b690)
+
+
 
 ## Result :
 
-Thus, ALP for fundamental arithmetic operations are executed successfully.
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
  
 
 
